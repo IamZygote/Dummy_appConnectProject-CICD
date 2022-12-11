@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="false" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1666178773893" workspaceResource="/esb.framework.lib/esb/framework/esql/ConsoleLog.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file esb.framework.lib\esb\framework\esql\ConsoleLog.esql.&#xA;Successfully added file esb.framework.lib\esb\framework\esql\ConsoleLog.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="esb\framework\esql\ConsoleLog.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1666178773901" workspaceResource="/esb.framework.lib/library.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file esb.framework.lib\library.descriptor.&#xA;Successfully added file esb.framework.lib\library.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file esb.framework.lib\library.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="library.descriptor"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1666178773885" workspaceResource="/esb.framework.java.lib/.classpath">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file esb.framework.java.lib\.classpath.&#xA;Successfully added file esb.framework.java.lib\.classpath to BAR file.&#xA;Elapsed time: 0.047 second(s).&#xA;" severity="0"/>
+      <barEntry name="esb.framework.java.lib.jar"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

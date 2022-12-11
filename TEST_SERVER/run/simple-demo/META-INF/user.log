@@ -1,0 +1,36 @@
+
+==============================================
+
+!Sun Dec 11 18:14:05 EET 2022
+
+Processing file simple-demo\say_hello.msgflow.
+Successfully added file simple-demo\say_hello.msgflow to BAR file.
+
+==============================================
+
+!Sun Dec 11 18:14:05 EET 2022
+
+Processing file simple-demo\application.descriptor.
+Successfully added file simple-demo\application.descriptor to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file simple-demo\application.descriptor to BAR file.
+
+==============================================
+
+!Sun Dec 11 18:14:05 EET 2022
+
+Processing file simple-demo\application.descriptor.
+Successfully added file simple-demo\application.descriptor to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file simple-demo\application.descriptor to BAR file.
+
+==============================================
+
+!Sun Dec 11 18:14:05 EET 2022
+
+Processing file simple-demo\say_hello_world.esql.
+Dependent ESQL file esb/framework/esql/ConsoleLog.esql is added to the BAR file.
+
+Successfully added file simple-demo\say_hello_world.esql to BAR file.

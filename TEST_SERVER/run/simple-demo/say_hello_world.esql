@@ -1,0 +1,12 @@
+PATH esb.framework.esql;
+
+CREATE COMPUTE MODULE say_hello_world
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE Id CHAR UUIDASCHAR;
+		CALL LogWithoutMasking('Request',Id,InputRoot); 
+		SET OutputRoot.JSON.Data.hello = 'world';
+		CALL LogWithoutMasking('Response',Id, OutputRoot.JSON); 
+		RETURN TRUE;
+	END;
+END MODULE;

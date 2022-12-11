@@ -1,0 +1,35 @@
+
+==============================================
+
+!Sun Dec 11 18:13:59 EET 2022
+
+Processing file esb.framework.lib\esb\framework\esql\ConsoleLog.esql.
+Successfully added file esb.framework.lib\esb\framework\esql\ConsoleLog.esql to BAR file.
+
+==============================================
+
+!Sun Dec 11 18:13:59 EET 2022
+
+Processing file esb.framework.lib\library.descriptor.
+Successfully added file esb.framework.lib\library.descriptor to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file esb.framework.lib\library.descriptor to BAR file.
+
+==============================================
+
+!Sun Dec 11 18:13:59 EET 2022
+
+Processing file esb.framework.lib\library.descriptor.
+Successfully added file esb.framework.lib\library.descriptor to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file esb.framework.lib\library.descriptor to BAR file.
+
+==============================================
+
+!Sun Dec 11 18:13:59 EET 2022
+
+Processing file esb.framework.java.lib\.classpath.
+Successfully added file esb.framework.java.lib\.classpath to BAR file.
+Elapsed time: 0.047 second(s).

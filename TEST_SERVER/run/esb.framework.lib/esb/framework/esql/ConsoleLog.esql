@@ -1,0 +1,56 @@
+BROKER SCHEMA esb.framework.esql
+
+
+CREATE PROCEDURE LogToConsole(IN desc CHARACTER , IN GUID CHARACTER , IN data CHARACTER)
+LANGUAGE JAVA
+EXTERNAL NAME "esb.framework.java.lib.ConsoleLog.log";
+
+CREATE FUNCTION LogWithoutMasking(IN desc CHARACTER , IN GUID CHARACTER , IN msgRef REFERENCE)
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE LIKE '%' BEGIN END;
+	DECLARE otherFieldsBlobMsg BLOB;
+	DECLARE otherFieldsMsg CHAR;
+	SET otherFieldsBlobMsg= ASBITSTREAM(msgRef CCSID 1208 ENCODING 546);
+	SET otherFieldsMsg= CAST(otherFieldsBlobMsg AS CHARACTER CCSID 1208 ENCODING 546);
+	CALL SplitLog(otherFieldsMsg);
+	IF (otherFieldsMsg IS NULL OR otherFieldsMsg = '') THEN
+		SET otherFieldsMsg= CAST(otherFieldsBlobMsg AS CHARACTER);
+	END IF;
+	CALL LogToConsole(desc,GUID,otherFieldsMsg);
+END ;
+
+
+CREATE FUNCTION LogWithMasking(IN desc CHARACTER , IN GUID CHARACTER , IN msgRef REFERENCE , IN maskingPaths REFERENCE )
+BEGIN
+	DECLARE msgRow ROW;
+	CREATE LASTCHILD OF msgRow DOMAIN 'SOAP' FROM msgRef;
+	DECLARE EnableMasking CHARACTER maskingPaths.Enable;
+	IF (UPPER(EnableMasking) <> 'FALSE') THEN
+		DECLARE refMask REFERENCE TO maskingPaths.Mask[1];
+		WHILE LASTMOVE (refMask) DO
+			IF (EVAL ('msgRow.*:*[>].*:'||refMask) IS NOT NULL AND EVAL ('msgRow.*:*[>].*:'||refMask) <> '') THEN
+				EVAL ('SET msgRow.*:*[>].*:'||refMask||'= ''********''');
+			END IF;
+			MOVE refMask NEXTSIBLING REPEAT NAME;
+		END WHILE;
+	END IF;
+	DECLARE otherFieldsBlobMsg BLOB;
+	DECLARE otherFieldsMsg CHAR;
+	SET otherFieldsBlobMsg= ASBITSTREAM(msgRow.*[>] CCSID 1208 ENCODING 546);
+	SET otherFieldsMsg= CAST(otherFieldsBlobMsg AS CHARACTER CCSID 1208 ENCODING 546);
+	CALL SplitLog(otherFieldsMsg);
+	CALL LogToConsole(desc,GUID,otherFieldsMsg);
+END ;
+
+CREATE FUNCTION SplitLog(IN msgRef REFERENCE) BEGIN
+	DECLARE LINE_LENGTH DECIMAL 30000;
+	DECLARE msgLength INTEGER LENGTH(msgRef);
+	DECLARE numOfLines INTEGER ROUND(msgLength / LINE_LENGTH, 0 MODE ROUND_UP);
+	DECLARE endIndex INTEGER LINE_LENGTH;
+	DECLARE I INTEGER 1;
+	WHILE I < numOfLines DO
+		SET msgRef = SUBSTRING(msgRef FROM 1 FOR endIndex) || CAST(X'0A' AS CHARACTER CCSID 1208) || SUBSTRING(msgRef FROM endIndex + 1);
+		SET endIndex = endIndex + LINE_LENGTH + 1;
+		SET I = I + 1;
+	END WHILE;
+END;

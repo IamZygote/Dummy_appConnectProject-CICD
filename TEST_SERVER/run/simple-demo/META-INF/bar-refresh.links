@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="false" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1670338454652" workspaceResource="/simple-demo/application.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file simple-demo\application.descriptor.&#xA;Successfully added file simple-demo\application.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file simple-demo\application.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="application.descriptor"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1667553201000" workspaceResource="/simple-demo/say_hello.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file simple-demo\say_hello.msgflow.&#xA;Successfully added file simple-demo\say_hello.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="say_hello.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1670338819115" workspaceResource="/simple-demo/say_hello_world.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file simple-demo\say_hello_world.esql.&#xA;Dependent ESQL file esb/framework/esql/ConsoleLog.esql is added to the BAR file.&#xA;&#xA;Successfully added file simple-demo\say_hello_world.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="say_hello_world.esql"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

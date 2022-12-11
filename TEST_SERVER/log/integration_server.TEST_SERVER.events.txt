@@ -1,0 +1,20 @@
+2022-12-11 16:13:44.013372Z: [Thread 15140] (Msg 1/1) BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '12.0.6.0' (64-bit) 
+2022-12-11 16:13:44.054312Z: [Thread 15140] (Msg 1/1) BIP9905I: Initializing resource managers. 
+2022-12-11 16:13:48.342536Z: [Thread 15140] (Msg 1/1) BIP9906I: Reading deployed resources. 
+2022-12-11 16:13:48.990124Z: [Thread 12924] (Msg 1/1) BIP2866I: IBM App Connect Enterprise administration security is inactive. 
+2022-12-11 16:13:49.005496Z: [Thread 12924] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
+2022-12-11 16:13:49.009480Z: [Thread 15140] (Msg 1/1) BIP1991I: Integration server has finished initialization. 
+2022-12-11 16:13:59.449068Z: [Thread 7332] (Msg 1/1) BIP2152I: Configuration message received. 
+2022-12-11 16:13:59.471224Z: [Thread 7332] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'esb.framework.lib' of type 'SharedLibrary'. 
+2022-12-11 16:13:59.631096Z: [Thread 7332] (Msg 1/1) BIP9332I: SharedLibrary 'esb.framework.lib' has been created successfully. 
+2022-12-11 16:13:59.631188Z: [Thread 7332] (Msg 1/1) BIP9326I: The source 'esb.framework.libproject.generated.bar' has been successfully deployed. 
+2022-12-11 16:13:59.631552Z: [Thread 7332] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2022-12-11 16:14:05.752310Z: [Thread 8084] (Msg 1/1) BIP2152I: Configuration message received. 
+2022-12-11 16:14:05.767634Z: [Thread 8084] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'simple-demo' of type 'Application'. 
+2022-12-11 16:14:05.817081Z: [Thread 8084] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'simple-demo' of type 'Application'. 
+2022-12-11 16:14:05.889241Z: [Thread 8084] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2022-12-11 16:14:05.889340Z: [Thread 8084] (Msg 1/1) BIP1996I: Listening on HTTP URL '/hello'. 
+2022-12-11 16:14:05.889843Z: [Thread 8084] (Msg 1/1) BIP2269I: Deployed resource 'say_hello' (uuid='say_hello',type='MessageFlow') started successfully. 
+2022-12-11 16:14:05.889929Z: [Thread 8084] (Msg 1/1) BIP9332I: Application 'simple-demo' has been created successfully. 
+2022-12-11 16:14:05.889960Z: [Thread 8084] (Msg 1/1) BIP9326I: The source 'simple-demoproject.generated.bar' has been successfully deployed. 
+2022-12-11 16:14:05.890389Z: [Thread 8084] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 

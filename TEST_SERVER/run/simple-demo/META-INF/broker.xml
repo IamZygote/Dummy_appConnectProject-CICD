@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="C:\Sumerge\Shared\Dummy_appConnectProject-CICD\GeneratedBarFiles\simple-demoproject.generated.bar" deployTimestamp="2022-12-11 16:14:05">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="say_hello" deployBarfile="C:\Sumerge\Shared\Dummy_appConnectProject-CICD\GeneratedBarFiles\simple-demoproject.generated.bar" deployTimestamp="2022-12-11 16:14:05">
+    <ConfigurableProperty uri="say_hello#/hello.URLSpecifier" override="/hello">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#/hello.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#/hello.faultFormat">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#/hello.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#/hello.timeoutForClient">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#/hello.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#/hello.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#reply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#wlmPolicy">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#world.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#world.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="say_hello#world.validateMaster">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

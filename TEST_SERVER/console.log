@@ -1,0 +1,55 @@
+2022-12-11 18:13:44.013372: BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '12.0.6.0' (64-bit) 
+2022-12-11 18:13:44.054312: BIP9905I: Initializing resource managers. 
+Listening for transport dt_socket at address: 9997
+2022-12-11 18:13:48.342536: BIP9906I: Reading deployed resources. 
+2022-12-11 18:13:48.990124: BIP2866I: IBM App Connect Enterprise administration security is inactive. 
+2022-12-11 18:13:49.005496: BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
+2022-12-11 18:13:49.009480: BIP1991I: Integration server has finished initialization. 
+2022-12-11 18:13:59.449068: BIP2152I: Configuration message received. 
+2022-12-11 18:13:59.471224: BIP2155I: About to 'Initialize' the deployed resource 'esb.framework.lib' of type 'SharedLibrary'. 
+2022-12-11 18:13:59.631096: BIP9332I: SharedLibrary 'esb.framework.lib' has been created successfully. 
+2022-12-11 18:13:59.631188: BIP9326I: The source 'esb.framework.libproject.generated.bar' has been successfully deployed. 
+2022-12-11 18:13:59.631552: BIP2154I: Integration server finished with Configuration message. 
+2022-12-11 18:14:05.752310: BIP2152I: Configuration message received. 
+2022-12-11 18:14:05.767634: BIP2155I: About to 'Initialize' the deployed resource 'simple-demo' of type 'Application'. 
+2022-12-11 18:14:05.817081: BIP2155I: About to 'Start' the deployed resource 'simple-demo' of type 'Application'. 
+An http endpoint was registered on port '7800', path '/hello'.
+2022-12-11 18:14:05.889241: BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2022-12-11 18:14:05.889340: BIP1996I: Listening on HTTP URL '/hello'. 
+Started native listener for HTTP input node on port 7800 for URL /hello
+2022-12-11 18:14:05.889843: BIP2269I: Deployed resource 'say_hello' (uuid='say_hello',type='MessageFlow') started successfully. 
+2022-12-11 18:14:05.889929: BIP9332I: Application 'simple-demo' has been created successfully. 
+2022-12-11 18:14:05.889960: BIP9326I: The source 'simple-demoproject.generated.bar' has been successfully deployed. 
+2022-12-11 18:14:05.890389: BIP2154I: Integration server finished with Configuration message. 
+2022-12-11 18:14:36.112     47 Desc: Request , GUID: 8a91be4d-7f41-4bfd-bc62-aa34473318ec , MSG: POST http://localhost:7800/hello HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml
+Content-Length: 0
+Host: localhost:7800
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.5 (Java/16.0.1)
+X-Original-HTTP-Command: POST http://localhost:7800/hello HTTP/1.1
+X-Server-Name: localhost
+X-Server-Port: 7800
+X-Remote-Addr: 127.0.0.1
+X-Remote-Host: localhost
+X-Scheme: http
+
+
+2022-12-11 18:14:36.114     47 Desc: Response , GUID: 8a91be4d-7f41-4bfd-bc62-aa34473318ec , MSG: {"hello":"world"}
+2022-12-11 18:14:37.812     47 Desc: Request , GUID: 057385c7-c2b1-41ff-9be8-95510e1c7541 , MSG: POST http://localhost:7800/hello HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml
+Content-Length: 0
+Host: localhost:7800
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.5 (Java/16.0.1)
+X-Original-HTTP-Command: POST http://localhost:7800/hello HTTP/1.1
+X-Server-Name: localhost
+X-Server-Port: 7800
+X-Remote-Addr: 127.0.0.1
+X-Remote-Host: localhost
+X-Scheme: http
+
+
+2022-12-11 18:14:37.812     47 Desc: Response , GUID: 057385c7-c2b1-41ff-9be8-95510e1c7541 , MSG: {"hello":"world"}
