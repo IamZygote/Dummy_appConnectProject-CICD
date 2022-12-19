@@ -1,6 +1,6 @@
 #!bin/bash
 
-cd /workspace/source/code
+
 
 pwd
 
