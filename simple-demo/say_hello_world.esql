@@ -5,7 +5,7 @@ CREATE COMPUTE MODULE say_hello_world
 	BEGIN
 		DECLARE Id CHAR UUIDASCHAR;
 		CALL LogWithoutMasking('Request',Id,InputRoot); 
-		SET OutputRoot.JSON.Data.hello = 'world 14Feb2023';
+		SET OutputRoot.JSON.Data.hello = 'world';
 		CALL LogWithoutMasking('Response',Id, OutputRoot.JSON); 
 		RETURN TRUE;
 	END;
